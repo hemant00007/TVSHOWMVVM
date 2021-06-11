@@ -36,7 +36,7 @@ private int currentPage = 1;
         getMostPopularTVShows();
     }
     private void getMostPopularTVShows(){
-        //toogleLoading();
+   toogleLoading();
         viewModels.getMostPopularTVShows(currentPage).observe(this,mostPopularTVShowsResponse ->{
             activityMainBinding.setIsLoading(false);
             if (mostPopularTVShowsResponse !=null){
@@ -50,20 +50,20 @@ private int currentPage = 1;
 //                        Toast.LENGTH_SHORT).show()
         );
     }
-//    private void toogleLoading(){
-//        if (currentPage ==1) {
-//            if (activityMainBinding.getIsLoading() != null && activityMainBinding.getIsLoading()) {
-//                activityMainBinding.setIsLoading(false);
-//            } else {
-//                activityMainBinding.setIsLoading(true);
-//            }
-//        }else {
-//                if(activityMainBinding.getIsLoadingMore() !=null && activityMainBinding.getIsLoadingMore()){
-//                    activityMainBinding.setIsLoadingMore(false);
-//                }else {
-//                    activityMainBinding.setIsLoadingMore(true);
-//                }
-//            }
-//        }
+    private void toogleLoading(){
+        if (currentPage ==1) {
+            if (activityMainBinding.getIsLoading() != null && activityMainBinding.getIsLoading()) {
+                activityMainBinding.setIsLoading(false);
+            } else {
+                activityMainBinding.setIsLoading(true);
+            }
+        }else {
+                if(activityMainBinding.getIsLoadingMore() !=null && activityMainBinding.getIsLoadingMore()){
+                    activityMainBinding.setIsLoadingMore(false);
+                }else {
+                    activityMainBinding.setIsLoadingMore(true);
+                }
+            }
+        }
 
 }

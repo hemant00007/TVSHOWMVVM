@@ -75,7 +75,7 @@
         <TextView
             android:id="@+id/textStarted"
             android:layout_width="0dp"
-            android:text="@{+tvshow.startDate}"
+            android:text="@{tvshow.startDate}"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_3sdp"
             android:fontFamily="@font/ubantu_regular"

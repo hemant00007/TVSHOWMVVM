@@ -7,9 +7,9 @@
         <variable
             name="isLoading"
             type="Boolean" />
-<!--        <variable-->
-<!--            name="isLoadingMore"-->
-<!--            type="Boolean" />-->
+        <variable
+            name="isLoadingMore"
+            type="Boolean" />
         <import type="android.view.View"/>
 
     </data>
