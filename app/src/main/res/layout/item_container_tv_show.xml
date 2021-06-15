@@ -67,7 +67,7 @@
             android:includeFontPadding="false"
             android:textColor="@color/colorTextOther"
             android:textSize="@dimen/_12ssp"
-            android:text='@{tvshow.network + "( "+tvshow.country+")"}'
+            android:text='@{tvshow.network }'
             app:layout_constraintEnd_toEndOf="@+id/textName"
             app:layout_constraintStart_toStartOf="@+id/textName"
             app:layout_constraintTop_toBottomOf="@+id/textName" />
@@ -75,7 +75,7 @@
         <TextView
             android:id="@+id/textStarted"
             android:layout_width="0dp"
-            android:text="@{+tvshow.startDate}"
+            android:text="@{tvshow.country}"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_3sdp"
             android:fontFamily="@font/ubantu_regular"
